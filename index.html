@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="William Toro">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Static Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3bdb467ab5.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!--banner -->
+    <section class="banner_section">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+              <!-- Full-width banner -->
+              <div class="col-12">
+                <img class="img-fluid w-100 banner_image" src="/static/images/DreamBig.jpg" alt="banner image">
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- intro -->
+    <section class="intro_section white_section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center">
+                    <img class="banner_headshot img-fluid rounded-circle" src="/static/images/headshot_image.jpg" alt="Headshot">
+                </div>
+                <div class="col-lg-8">
+                    <h2>Hello World!</h2>
+                    <p class="intro_info">
+                      I’m William — a passionate developer with a background in Applied Information Technology and over 3 years of experience in software engineering.
+                      I love working on everything from frontend and backend projects to mobile apps and databases.
+                      Whether I’m collaborating with a team or building something on my own,
+                      I always aim to get things done and keep learning along the way. Thanks for stopping by! 👋
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Projects -->
+    <section class="project_section sections carousel_section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Projects</h2>
+            <p class="project_text">❕All applications are hosted on Render. Load times may vary with traffic, so please give each application 60-80 seconds to fully load.</p>
+
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Inner -->
+              <div class="carousel-inner">
+
+                <!-- Card 1 -->
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                      <img src="{{ url_for('static', filename='images/calculator.jpg') }}" class="card-img-top" alt="Tip Calculator">
+                      <div class="card-body">
+                        <h5 class="card-title">Tip Calculator</h5>
+                        <p class="card-text">First Python project, a tip calculator!</p>
+                        <a href="https://tip-app-8leg.onrender.com" target="_blank" class="btn btn-primary">Calculate</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                      <img src="{{ url_for('static', filename='images/pizza.jpg') }}" class="card-img-top" alt="Willies Pizza">
+                      <div class="card-body">
+                        <h5 class="card-title">Willies Pizzeria</h5>
+                        <p class="card-text">A pizza shop</p>
+                        <a href="https://willies-pizzeria.onrender.com" target="_blank" class="btn btn-primary">Place an order</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                      <img src="{{ url_for('static', filename='images/space.jpg') }}" class="card-img-top" alt="Space Odyssey">
+
+                      <div class="card-body">
+                        <h5 class="card-title">Space Odyssey</h5>
+                        <p class="card-text">Where will the journey take you?</p>
+                        <a href="https://a-space-adventure-game.onrender.com" target="_blank" class="btn btn-primary">Explore</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                      <img src="{{ url_for('static', filename='images/cypher.jpg') }}" class="card-img-top" alt="Image of code">
+                      <div class="card-body">
+                        <h5 class="card-title">CypherLock</h5>
+                        <p class="card-text">Generate your new password</p>
+                        <a href="https://a-password-app.onrender.com" target="_blank" class="btn btn-primary">Generate</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                      <img src="static/images/numbers.jpg" class="card-img-top" alt="Higher or Lower">
+                      <div class="card-body">
+                        <h5 class="card-title">Higher or Lower</h5>
+                        <p class="card-text">How well do you know your stuff?</p>
+                        <a href="https://higher-lower-app.onrender.com" target="_blank" class="btn btn-primary">Who has more?</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- About Me -->
+    <section class="about_me_section sections white_section">
+        <div class="container-fluid ">
+            <div class="row">
+                <h2>About Me</h2>
+                <h5 class="about-info">When I am not on the computer or behind a monitor I like to:</h5>
+                <ul>
+                    <li>Go to the gym 💪🏽</li>
+                    <li>I really like to cook 🧑🏽‍🍳</li>
+                    <li>I’m a huge sports fan! With soccer being my favorite sport. ⚽</li>
+                    <li>When I have extra time, I enjoy reading. Some of my recent reads include <i>Rich Dad Poor Dad, 48 Laws of Power and The Richest Man in Babylon.</i>📖</li>
+
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- work -->
+    <section class="work_experience_section sections colored_section">
+        <div class="container-fluid">
+            <div class="row">
+
+                <h2 class="work">Work Experience</h2>
+                <!-- work 1 -->
+                <h4 class="work_location1">Maryland Department of Environment IT Division</h4>
+                <h6 class="work_title1">Technology Intern (University of Baltimore NextGen Leaders)</h6>
+                <ul class="maryland_list">
+                    <li class="maryland_list_item1">
+                        Contributed to database maintenance and modernized outdated FoxPro
+                        applications by transforming them into contemporary web applications using tools
+                        such as C#, Visual Studio, and SQL Server Management Studio (SSMS).
+                    </li>
+                    <li class="maryland_list_item2">
+                        Responsible for migrating Crystal Reports to Power BI, including data mapping,
+                        recreating visualizations, and conducting user training. Focused on ensuring a
+                        seamless transition with accurate reporting while leveraging <br>Power BI’s
+                        advanced features for enhanced insights.
+                    </li>
+                </ul>
+
+                <!-- work 2 -->
+                <h4 class="work_location2">Que Technology Group</h4>
+                <h6 class="work_title2">Technology Intern</h6>
+                <ul class="que_list">
+                    <li class="que_list_item1">
+                        Proactively contributed to the Maryland Technology Internship Program
+                    </li>
+                    <li class="que_list_item2">Entrusted with mentoring junior interns in the program, providing guidance and
+                        support to foster their growth and development.
+                    </li>
+                    <li class="que_list_item3">
+                        Spearheaded development of a ChatGPT-based application to leverage AI and
+                        data systems to enhance the efficiency of our recruiting processes.
+                    </li>
+                </ul>
+
+                <!-- work 3 -->
+                <h4 class="work_location3">Blink Charging</h4>
+                <h6 class="work_title3">Circuit board Technician</h6>
+                <ul class="blink_list">
+                    <li class="blink_list_item1">
+                        Designed, tested, debugged, and documented embedded software for custom
+                        electronic systems, ensuring seamless functionality to achieve specific system
+                        objectives
+                    </li>
+                    <li class="blink_list_item2">
+                        Formulated and executed meticulous test plans to validate the precise
+                        functionality of each embedded software component, ensuring adherence to
+                        intended specifications
+                    </li>
+                    <li class="blink_list_item3">
+                        Provisioned more than 300 modules according to company requirements
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- education -->
+    <section class="education_section sections white_section">
+        <div class="container">
+            <h2 class="text-center mb-4">Education</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <h4>University of Baltimore</h4>
+                    <h6>Bachelor of Science</h6>
+                    <h6>Applied Information Technology</h6>
+                    <p>Aug. 2022 - Dec. 2024</p>
+                    <p>GPA: 3.28</p>
+                </div>
+                <div class="col-md-5">
+                    <h4>Eastwick College Nutley</h4>
+                    <h6>Associate of Science</h6>
+                    <h6>Computer & Electrical Technology</h6>
+                    <p>Aug. 2019 - May. 2021</p>
+                    <p>GPA: 3.05</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--contact -->
+    <section class="contact_section sections colored_section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6">
+                    <h2>Let's Connect</h2>
+
+                    <div class="mb-3">
+                        <h6>Email </h6>
+
+                        <p><i class="fa-solid fa-envelope"></i> willtoro94@gmail.com</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6>LinkedIn</h6>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a class="linkedin-link" href="https://www.linkedin.com/in/william-toro" target="_blank">William Toro</a>
+                    </div>
+                    <div class="mb-3">
+                        <h6>GitHub</h6>
+                        <i class="fa-brands fa-github-alt"></i>
+                        <a class="github-link" href="https://github.com/WillToro94" target="_blank">WillToro94</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Bundle with Popper (required for carousel functionality) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+  </body>
+</html>
