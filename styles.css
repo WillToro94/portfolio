@@ -1,0 +1,263 @@
+
+
+/* ====== Global Layout ====== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  font-family: "McLaren", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+.sections {
+  padding: 60px 0;
+  margin: 0;
+}
+.sections h2 {
+  margin: 0 0 40px 0;
+}
+
+
+.white_section {
+  background-color: #fff;
+}
+
+.colored_section {
+  background-color: #9EC6F3;
+}
+
+/* Consistent padding & margin for all containers */
+.container,
+.container-fluid {
+  padding: 40px 20px;
+}
+
+/* ====== Banner Section ====== */
+.banner_section {
+  margin: 0;
+  padding: 0;
+}
+
+.banner_section .container-fluid,
+.banner_section .row,
+.banner_section .col-12 {
+  margin: 0;
+  padding: 0;
+}
+
+.banner_image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* ====== Intro ====== */
+.intro_info {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* ====== Projects Carousel ====== */
+.project_section h2,
+.project_section p {
+  color: #57564F;
+}
+.project_text {
+  font-size: 1.3rem;
+}
+.card-text {
+  color: black !important;
+}
+.carousel .card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.carousel_section {
+  background-color: #A3CCDA
+}
+
+/* ====== About Me ====== */
+.about_me_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about_me_section h2 {
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.about_me_section h5 {
+  font-size: 1.7rem;
+}
+
+.about_me_section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.about_me_section li {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 5px 0;
+}
+
+
+/* ====== Work Experience Section ====== */
+.work_experience_section {
+  color: #7A7A73;
+  text-align: left; /* make all text default to left */
+}
+
+.work_experience_section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Ensure only h4 and h6 remain left-aligned (override any global centering) */
+.work_experience_section h4,
+.work_experience_section h6 {
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+/* Keep bullet points neatly aligned and indented */
+.work_experience_section ul {
+  text-align: left;
+  margin-left: 40px;
+}
+/* ====== Education Section ====== */
+
+.education_section p {
+  margin: 0;
+}
+.education_section {
+  text-align: center;
+}
+.education_section .row {
+  margin-top: 80px;
+}
+
+
+.education_section h4,
+.education_section h6,
+.education_section p {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* ====== Contact Section ====== */
+
+.contact_section a:hover {
+  color: #134686;
+}
+.contact_section, .col-md-6 {
+  color: #7A7A73
+}
+.github-link, .linkedin-link {
+    color: #7A7A73
+}
+
+
+/* ====== General Headings ====== */
+h2, h3, h4, h6 {
+
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
+/* ====== Responsive Fixes ====== */
+@media (max-width: 768px) {
+  .container,
+  .container-fluid {
+    padding: 20px;
+  }
+
+  .about_me_section .col-lg-4,
+  .about_me_section .col-lg-8 {
+    text-align: center;
+  }
+
+  .education_section .col-md-5 {
+    margin-bottom: 30px;
+  }
+}
+
+/* ====== Mini Project Cards - Responsive & Consistent Size ====== */
+.carousel .card {
+  width: 100%;
+  max-width: 320px;           /* sets a max size on large screens */
+  height: 380px;              /* consistent height across all cards */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;             /* keeps card centered in carousel */
+}
+
+/* Make images look uniform */
+.carousel .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Text inside the card */
+.carousel .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ======Carousel-Card Responsive Adjustments ====== */
+@media (max-width: 992px) {
+  .carousel .card {
+    max-width: 280px;
+    height: 350px;
+  }
+
+  .carousel .card img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel .card {
+    max-width: 240px;
+    height: 320px;
+  }
+
+  .carousel .card img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel .card {
+    max-width: 200px;
+    height: 300px;
+  }
+
+  .carousel .card img {
+    height: 120px;
+  }
+}
+
+
+
