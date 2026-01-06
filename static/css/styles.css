@@ -6,12 +6,17 @@ body {
   font-family: "McLaren", sans-serif;
   font-weight: 400;
   font-style: normal;
+  overflow-x: hidden;
 }
 
 .sections {
   padding: 60px 0;
   margin: 0;
 }
+.sections h2 {
+  margin: 0 0 40px 0;
+}
+
 
 .white_section {
   background-color: #fff;
@@ -24,7 +29,7 @@ body {
 /* Consistent padding & margin for all containers */
 .container,
 .container-fluid {
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 /* ====== Banner Section ====== */
@@ -47,17 +52,24 @@ body {
   display: block;
 }
 
+/* ====== Intro ====== */
+.intro_info {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+}
+
 /* ====== Projects Carousel ====== */
 .project_section h2,
 .project_section p {
   color: #57564F;
 }
+.project_text {
+  font-size: 1.3rem;
+}
 .card-text {
   color: black !important;
-}
-.project_section, .mb-4 {
-  padding-top: 0 !important;    /* Removes extra space above */
-  margin-top: 0 !important;
 }
 .carousel .card {
   border-radius: 15px;
@@ -78,15 +90,11 @@ body {
 
 .about_me_section h2 {
   font-weight: bold;
-  margin-bottom: 20px;
   margin-top: 0px;
 }
 
-.bio_info {
+.about_me_section h5 {
   font-size: 1.7rem;
-  line-height: 1.6;
-  text-align: center;
-  max-width: 800px;
 }
 
 .about_me_section ul {
@@ -96,6 +104,7 @@ body {
 }
 
 .about_me_section li {
+  font-size: 1.5rem;
   text-align: center;
   margin: 5px 0;
 }
@@ -103,8 +112,6 @@ body {
 
 /* ====== Work Experience Section ====== */
 .work_experience_section {
-  padding-top: 0;    /* Removes extra space above */
-  margin-top: 0;
   color: #7A7A73;
   text-align: left; /* make all text default to left */
 }
@@ -127,19 +134,19 @@ body {
   text-align: left;
   margin-left: 40px;
 }
-
-
-
 /* ====== Education Section ====== */
 
 .education_section p {
   margin: 0;
 }
 .education_section {
-  padding-top: 0;    /* Removes extra space above */
-  margin-top: 0;
   text-align: center;
 }
+.education_section .row {
+  margin-top: 80px;
+}
+
+
 .education_section h4,
 .education_section h6,
 .education_section p {
@@ -153,8 +160,6 @@ body {
   color: #134686;
 }
 .contact_section, .col-md-6 {
-  padding-top: 0 !important;    /* Removes extra space above */
-  margin-top: 0 !important;
   color: #7A7A73
 }
 .github-link, .linkedin-link {
@@ -168,10 +173,7 @@ h2, h3, h4, h6 {
   margin-bottom: 15px;
   text-align: center;
 }
-h2 {
 
-  padding-top: 5px;
-}
 
 /* ====== Responsive Fixes ====== */
 @media (max-width: 768px) {
@@ -254,6 +256,5 @@ h2 {
     height: 120px;
   }
 }
-
 
 
