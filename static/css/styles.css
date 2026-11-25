@@ -112,8 +112,8 @@ body {
 
 /* ====== Work Experience Section ====== */
 .work_experience_section {
-  color: #7A7A73;
-  text-align: left; /* make all text default to left */
+  color: #131B2B;
+  text-align: center; /* make all text default to left */
 }
 
 .work_experience_section h2 {
@@ -124,14 +124,15 @@ body {
 /* Ensure only h4 and h6 remain left-aligned (override any global centering) */
 .work_experience_section h4,
 .work_experience_section h6 {
-  text-align: left;
+  text-align: center;
   margin-left: 15px;
   margin-top: 10px;
 }
 
 /* Keep bullet points neatly aligned and indented */
 .work_experience_section ul {
-  text-align: left;
+  list-style-type: none;
+  text-align: center;
   margin-left: 40px;
 }
 /* ====== Education Section ====== */
@@ -157,13 +158,13 @@ body {
 /* ====== Contact Section ====== */
 
 .contact_section a:hover {
-  color: #134686;
+  color: #FF9808;
 }
 .contact_section, .col-md-6 {
-  color: #7A7A73
+  color: #131B2B
 }
 .github-link, .linkedin-link {
-    color: #7A7A73
+    color: #131B2B
 }
 
 
@@ -256,5 +257,6 @@ h2, h3, h4, h6 {
     height: 120px;
   }
 }
+
 
 
