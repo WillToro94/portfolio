@@ -1,12 +1,13 @@
 /* ====== Global Layout ====== */
-body {
+html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
   background-color: #f8f9fa;
   font-family: "McLaren", sans-serif;
   font-weight: 400;
   font-style: normal;
-  overflow-x: hidden;
 }
 
 .sections {
@@ -167,6 +168,18 @@ body {
     color: #131B2B
 }
 
+/* ====== Footer Section ====== */
+footer {
+  background-color: #FF5722;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.footer_text {
+  text-align: center;
+  margin: 0;            /* Removes the white space underneath the <p> tag */
+  padding: 20px 15px;   /* Adds space around the text (20px top/bottom, 15px left/right) */
+}
 
 /* ====== General Headings ====== */
 h2, h3, h4, h6 {
